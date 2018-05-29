@@ -6,7 +6,7 @@ import * as i18n from 'i18n';
 
 i18n.configure({
     locales: ['en', 'ro', 'ru', 'hu', 'cs', 'bg', 'it', 'pl', 'sq', 'tr'],
-    directory: join(__dirname, '...', 'locales'),
+    directory: join(__dirname, '..', 'locales'),
 });
 
 export default function (req: Request, res: Response, next: NextFunction) {

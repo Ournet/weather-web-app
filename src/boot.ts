@@ -30,7 +30,7 @@ function getLinks(country: string, language: string) {
     return LINKS[country];
 }
 
-module.exports = function (req: Request, res: Response, next: NextFunction) {
+export default function (req: Request, res: Response, next: NextFunction) {
     const country = getCountry(req);
     if (!country) {
         return next(new Error(`Invalid hostname: ${req.hostname}`));

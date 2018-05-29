@@ -5,6 +5,7 @@
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
   "scripts": {
+    "start": "tsc && node ./lib/app.js",
     "pretest": "npm run clean && npm run tsc",
     "test": "ava --no-cache --verbose lib/**/*.test.js",
     "posttest": "npm run clean-test-code",
@@ -53,7 +54,9 @@
     "graphql-tag": "^2.9.2",
     "i18n": "^0.8.3",
     "ms": "^2.1.1",
+    "ournet.links": "^0.3.4",
     "ournet.logger": "^0.1.0",
-    "preact": "^8.2.9"
+    "preact": "^8.2.9",
+    "preact-render-to-string": "^3.7.0"
   }
 }
